@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Palindrome Checker</title>
+    <link href="../../../css/all-pages.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <style>
+        #palindrome-checker {
+            background-color: #2c3e50;
+            margin-top: 10vh;
+            height: 90vh;
+            color: rgb(241, 229, 229);
+        }
+
+        #palindrome-title {
+            margin-top: 5rem;
+        }
+
+        #section-input {
+            text-align: center;
+        }
+
+        #section-input,
+        #section-display,
+        #section-result {
+            padding: 20px;
+            margin-top: 20px;
+            /* font-size:2.4px; */
+        }
+
+        #forward-backward-display {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        #forward-box,
+        #backward-box {
+            padding: 10px;
+            margin: 10px;
+            background-color: #7f8c8d;
+            width: 40%;
+        }
+
+        #equal-or-not-icon {
+            margin: auto;
+            width: 10%;
+        }
+
+        /*
+
+TYPOGRAPHY
+
+*/
+
+        h2 {
+            font-size: 35px;
+        }
+
+        #result {
+            font-size: 40px;
+        }
+
+        #front,
+        #back {
+            font-size: 30px;
+
+        }
+
+        #read-backward,
+        #read-forward {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="navigation">
+            <div class="navigation__back">
+                &nbsp;
+            </div>
+            <a href="../../../../" id="page-title" class="navigation__title">
+                CromBlog
+            </a>
+            <input type="checkbox" class="navigation__checkbox" id="navigation-toggle">
+
+            <label for="navigation-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <div class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="../../../about/" class="navigation__link">About</a></li>
+                    <li class="navigation__item"><a href="../../../blog/" class="navigation__link">Blog</a></li>
+                    <li class="navigation__item"><a href="../../../contact/" class="navigation__link">Contact</a>
+                    </li>
+                    <li class="navigation__item"><a href="../../../web-development-portfolio/"
+                            class="navigation__link">Web
+                            Development Portfolio</a></li>
+                    <li class="navigation__item"><a href="../../../writing-portfolio/" class="navigation__link">Writing
+                            Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section id="palindrome-checker">
+            <div>&nbsp;</div>
+            <h1 id="palindrome-title">Palindrome Checker</h1>
+            <section id="section-input">
+                <input id="enter-palindrome" type="text" placeholder="Enter a Palindrome">
+                <button id="submit-button" type="button">Enter</button>
+            </section>
+
+
+            <section id="section-display">
+                <h2 id="word">Is ___ a palindrome?</h2>
+
+                <div id="forward-backward-display" style="display:none;">
+                    <div id="forward-box">
+                        <h3 id="read-forward">Read Forward</h3>
+                        <div id="front"></div>
+                    </div>
+
+                    <div id="equal-or-not-icon">
+                        <i id="equal-icon" class="fas fa-equals" style="display:none;"></i>
+                        <i id="not-equal-icon" class="fas fa-not-equal" style="display:none;"></i>
+                    </div>
+
+                    <div id="backward-box">
+                        <h3 id="read-backward">Read Backward</h3>
+                        <div id="back"></div>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <section id="sections-result">
+                <div id="result">
+                </div>
+            </section>
+        </section>
+
+    </main>
+
+    <!-- <div id="project-description"> 
+                    <p>Return true if the given string is a palindrome. Otherwise, return false.</p>
+
+                    <p>A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.</p>
+        
+                    <p>Note
+                    You'll need to remove all non-alphanumeric characters (punctuation, spaces and symbols) and turn everything into the same case (lower or upper case) in order to check for palindromes.</p>
+        
+                    <p>We'll pass strings with varying formats, such as "racecar", "RaceCar", and "race CAR" among others.</p>
+        
+                    <p>We'll also pass strings with special symbols, such as "2A3*3a2", "2A3 3a2", and "2_A3*3#A2".</p>
+        
+                    <p>Remember to use Read-Search-Ask if you get stuck. Write your own code.</p>
+            </div>-->
+
+</body>
+<script src="js/script.js"></script>
+
+</html>
